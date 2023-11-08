@@ -1,0 +1,5 @@
+IP: 158.160.74.12;
+name_taski: https://mypath.sytes.net;
+name_kittygram: https://kittygramya.hopto.org;
+login: raskin;
+password: ck6476tje;
