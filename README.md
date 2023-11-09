@@ -140,12 +140,7 @@ sudo systemctl reload nginx
 ```
 Собираем статику для бэкенда:
 
-Через редактор Nano откройте файл settings.py, укажите новое значение для константы STATIC_URL и создайте константу STATIC_ROOT:
-```
-STATIC_URL = '/static_backend/'
-STATIC_ROOT = BASE_DIR / 'static_backend'
-```
-Сохраните изменения и закройте файл, при активированном виртуальном окружении перейдите в директорию с файлом manage.py и выполните команду:
+Выполните команду:
 ```
 python manage.py collectstatic
 ```
@@ -159,9 +154,9 @@ sudo systemctl restart gunicorn
 ```
 
 ### Технологии:
-Python3, Django==3.2.3, 
+Python3, Django==3.2.3
 
 ### Автор:
-Raskin Vladimir
+[Raskin Vladimir](https://github.com/v0vanjke)
 
 
