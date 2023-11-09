@@ -5,37 +5,35 @@
 ### Деплой проекта на сервер:
 
 Подключаемся к удаленному серверу:
-
+```
 ssh -i путь_до_файла_с_SSH_ключом/название_файла_закрытого_SSH-ключа login@ip
-
+```
 Например:
-
+```
 ssh -i D:/Dev/vm_access/yc-username yc-user@153.0.2.10
-
+```
 Клонируйте репозиторий:
-
+```
 git@github.com:v0vanjke/infra_sprint1.git
-
+```
 Установите на сервер пакетный менеджер и утилиту для создания виртуального окружени
-
+```
 sudo apt install python3-pip python3-venv -y
-
+```
 Перейдите в папку проекта:
-
+```
 cd infra_sprint1/backend
-
+```
 Создайте и активируйте виртуальное окружение:
-
+```
 python -m venv venv
-
 source venv/bin/activate
-
 python -m pip install --upgrade pip
-
+```
 Установите зависимости из файла requirements.txt:
-
+```
 pip install -r requirements.txt
-
+```
 Выполните миграции:
 
 python manage.py migrate
